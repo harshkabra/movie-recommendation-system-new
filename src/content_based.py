@@ -31,7 +31,6 @@ def get_similar_movies(movie_id, n=10):
 
     movie_index = matching_indices[0]
 
-    # Sirf selected movie ke against similarities calculate karo
     similarity_scores = cosine_similarity(
         genre_matrix[movie_index],
         genre_matrix
